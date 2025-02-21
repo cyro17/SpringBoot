@@ -17,7 +17,7 @@ public class PublicController {
     @Autowired
     private UserService userService;
 
-    @GetMapping("/heath-check")
+    @GetMapping("/health-check")
     public String healthCheck(){
         return  "OK";
     }

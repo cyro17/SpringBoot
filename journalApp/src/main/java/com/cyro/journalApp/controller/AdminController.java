@@ -30,6 +30,11 @@ public class AdminController {
         return new ResponseEntity<>( HttpStatus.BAD_REQUEST);
     }
 
+    @GetMapping("/health-check")
+    public String healthCheck(){
+        return  "OK";
+    }
+
 //    @PostMapping("create-new-user")
 //    public ResponseEntity<?> createUser(@RequestBody User user){
 //
