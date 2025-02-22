@@ -30,4 +30,9 @@ public class PublicController {
         userService.saveNewUser(newUser);
     }
 
+    @PostMapping("login")
+    public String login(@RequestBody User user){
+        return userService.verify(user);
+    }
+
 }
